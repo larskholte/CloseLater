@@ -19,10 +19,10 @@ int main() {
 }
 ```
 
-If you frequently use a specific function to close a resource, such as free(), you can create a special class.
+See a more detailed example in `example.cpp`.
+
+A final note: If you frequently use a specific function to close a resource, such as free(), you might consider using `typedef` to create a special type of CLoseLater class for convenience.
 
 ```c++
 typedef CloseLater<free> FreeLater;
 ```
-
-See a more detailed example in `example.cpp`.

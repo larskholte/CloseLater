@@ -1,4 +1,8 @@
 // example.cpp
+//
+// A simple program to demonstrate the functionality of the CloseLater class.
+// Run this program with and without command-line arguments to see that the
+// memory is freed no matter how the program exits.
 
 #include <stdlib.h>
 #include <stdio.h>

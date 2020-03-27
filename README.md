@@ -14,8 +14,8 @@ Here is the basic paradigm illustrated with malloc() and free():
 int main() {
 	// Allocate an array that will need to be free'd
 	char* array = (char*)malloc(256);
-	CloseLater<free> ci(array);
-	// array will be free'd when ci loses scope, no matter how it happens
+	CloseLater<free> cl(array);
+	// array will be free'd when cl loses scope, no matter how it happens
 }
 ```
 
